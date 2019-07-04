@@ -34,6 +34,12 @@ const data = [
 ]
 ```
 
+# 如何使用
+
+* 先安装依赖`npm install`命令
+* 再执行`npm run test`跑`Test`所有的测试用例
+* 执行结果是这样的
+![前端单元测试用例](https://pic1.zhimg.com/50/v2-67583365ebd773ebe913989fd66f683f_r.jpg)
 
 > 欢迎前端开发一起维护，贡献代码。star 一下也是可以的 
 
