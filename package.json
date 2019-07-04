@@ -1,0 +1,26 @@
+{
+  "name": "coursera",
+  "version": "1.0.0",
+  "description": "前端算法",
+  "main": "index.js",
+  "author": "Cabber",
+  "license": "MIT",
+  "scripts": {
+    "test": "yarn lint && jest ./test",
+    "lint": "eslint --ext .js,.jsx src/ test/"
+  },
+  "dependencies": {
+    "jest": "^24.8.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.4.5",
+    "@babel/preset-env": "^7.4.5",
+    "eslint": "^6.0.1",
+    "eslint-config-standard": "^12.0.0",
+    "eslint-plugin-import": "^2.18.0",
+    "eslint-plugin-jest": "^22.7.1",
+    "eslint-plugin-node": "^9.1.0",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-standard": "^4.0.0"
+  }
+}
