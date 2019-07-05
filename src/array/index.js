@@ -18,6 +18,7 @@ export function disorder (arr) {
   let random
   while (current > -1) {
     random = Math.floor(len * Math.random())
+    // eslint-disable-next-line
     [arr[current], arr[random]] = [arr[random], arr[current]]
     current--
   }

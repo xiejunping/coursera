@@ -4,7 +4,7 @@
  * @param {Function} event 执行事件
  * @param {Number} time 延迟时间
  */
-export function debounce(event, time) {
+export function debounce (event, time) {
   let timer = null
   return function (...args) {
     clearTimeout(timer)
@@ -30,7 +30,7 @@ export function throttle (event, time) {
       event.apply(this, args)
     } else if (!timer) {
       timer = setTimeout(() => {
-        event.apply(this. args)
+        event.apply(this, args)
       }, time)
     }
   }
