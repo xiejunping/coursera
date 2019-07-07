@@ -8,6 +8,9 @@
 #### Array 
 
 * [x] unique 去重
+* [x] disorder 随机乱序 
+* [x] trans 数组元素移动 
+* [x] sets 快速构造数组 
 
 ### 单元测试 Test
 
