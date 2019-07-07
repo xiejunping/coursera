@@ -13,7 +13,12 @@
 
 #### 测试用例
 
-* [x] unique 
+* [x] unique 数组去重
+* [x] disorder 随机乱序 
+* [x] trans 数组元素移动 
+* [x] sets 快速构造数组 
+
+## unique 数组去重
 
 ```js
 const uniqueArr = [
@@ -32,6 +37,64 @@ const data = [
   { id: 3, name: 'kim' },
   { id: 1, name: 'lily' }
 ]
+```
+## disorder 随机乱序 
+```js
+const data = [
+  { id: 1, name: 'westom' },
+  { id: 2, name: 'lucy' },
+  { id: 3, name: 'lily' },
+  { id: 4, name: 'rose' },
+  { id: 5, name: 'jim' },
+  { id: 6, name: 'cabber' },
+  { id: 7, name: 'kim' },
+  { id: 8, name: 'jean' }
+]
+
+test('Array is original length', () => {
+  expect(disorder(data)).toHaveLength(8)
+})
+
+test('Array original', () => {
+  expect(disorder(data)).toEqual(data)
+})
+```
+
+## trans 数组元素移动 
+```js
+const a = [0, 1, 2, 3, 4, 5, 6, 7, 8]
+const b = [1, 0, 2, 3, 4, 5, 6, 7, 8]
+const c = [1, 0, 2, 3, 4, 5, 6, 8, 7]
+
+test('数组0元素向下移动', () => {
+  expect(trans(a, 0, 'next')).toEqual(b)
+})
+
+test('数组8元素向上移动', () => {
+  expect(trans(a, 8, 'prev')).toEqual(c)
+})
+
+test('数组0元素向上移动', () => {
+  expect(trans(a, 0, 'prev')).toEqual(a)
+})
+
+test('数组8元素向下移动', () => {
+  expect(trans(a, 8, 'next')).toEqual(a)
+})
+```
+
+## sets 快速构造数组 
+```js
+const a = [0, 1, 2, 3, 4, 5]
+const b = ['0', '0', '0', '0', '0']
+
+test('生成0-5的数组', () => {
+  expect(sets(6)).toEqual(a)
+})
+
+test('生成5个0的数组', () => {
+  expect(sets(5, '0')).toEqual(b)
+})
 ```
 
 # 如何使用
