@@ -6,8 +6,9 @@
   "author": "Cabber",
   "license": "MIT",
   "scripts": {
-    "test": "yarn lint && jest --coverage",
-    "lint": "eslint --ext .js,.jsx src/ test/"
+    "test": "yarn lint && jest --coverage && yarn server",
+    "lint": "eslint --ext .js,.jsx src/ test/",
+    "server": "http-server ./coverage/lcov-report/ -o"
   },
   "dependencies": {
     "jest": "^24.8.0"
@@ -22,6 +23,7 @@
     "eslint-plugin-jest": "^22.7.1",
     "eslint-plugin-node": "^9.1.0",
     "eslint-plugin-promise": "^4.2.1",
-    "eslint-plugin-standard": "^4.0.0"
+    "eslint-plugin-standard": "^4.0.0",
+    "http-server": "^0.12.0"
   }
 }

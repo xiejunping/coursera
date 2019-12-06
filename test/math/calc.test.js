@@ -20,10 +20,22 @@ test('计算0.1+0.2相加', () => {
   expect(add(0.1, 0.2)).toEqual(0.3)
 })
 
-test('计算0.2+0.1相减', () => {
+test('计算1+2相加', () => {
+  expect(add(1, 2)).toEqual(3)
+})
+
+test('计算0.2-0.1相减', () => {
   expect(sub(0.2, 0.1)).toEqual(0.1)
+})
+
+test('计算25-0.1相减', () => {
+  expect(sub(25, 9)).toEqual(16)
 })
 
 test('计算0.2%0.1相除', () => {
   expect(div(0.2, 0.1)).toEqual(2)
+})
+
+test('计算97%3相除', () => {
+  expect(div(97, 3)).toEqual(32.333333333333336)
 })
